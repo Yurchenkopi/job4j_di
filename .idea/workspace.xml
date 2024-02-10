@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3145782e-c547-475a-8906-1c1c63c767b1" name="Changes" comment="3. Жизненный цикл Spring Bean">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/MainXmlApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app-context-xml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="3145782e-c547-475a-8906-1c1c63c767b1" name="Changes" comment="4. Конфигурация контейнера [#505072]">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/BirdFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/Canary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/MainAppAnnotationBased.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/Parrot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotationbased/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/BirdFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Canary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/MainAppJavaCodeBased.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Parrot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/javacodebased/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/BirdFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/Canary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/MainAppXmlBased.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/Parrot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/xmlbased/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/annotation-based.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xml-based.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/annotation/Man.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -42,18 +60,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "dc979aa971baa67a766d066d5811d5c1"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MainXmlApp">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.clifecycle.Main" />
+  <component name="RunManager" selected="Application.MainAppJavaCodeBased">
+    <configuration name="MainAppAnnotationBased" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.annotationbased.MainAppAnnotationBased" />
       <module name="job4j_di" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.job4j.clifecycle.*" />
+          <option name="PATTERN" value="ru.job4j.annotationbased.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainAppJavaCodeBased" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.javacodebased.MainAppJavaCodeBased" />
+      <module name="job4j_di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.javacodebased.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainAppXmlBased" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.xmlbased.MainAppXmlBased" />
+      <module name="job4j_di" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.xmlbased.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,19 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoContextDI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.di.NoContextDI" />
-      <module name="job4j_di" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.job4j.di.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ru.job4j.annotation.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.annotation.Main" />
       <module name="job4j_di" />
@@ -100,26 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.job4j.lifecycle.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.lifecycle.Main" />
-      <module name="job4j_di" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.job4j.lifecycle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainAppJavaCodeBased" />
+        <item itemvalue="Application.MainAppAnnotationBased" />
+        <item itemvalue="Application.MainAppXmlBased" />
         <item itemvalue="Application.MainXmlApp" />
         <item itemvalue="Application.ru.job4j.annotation.Main" />
-        <item itemvalue="Application.ru.job4j.lifecycle.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.NoContextDI" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707251649204</updated>
       <workItem from="1707251651802" duration="3883000" />
+      <workItem from="1707578102816" duration="3119000" />
     </task>
     <task id="LOCAL-00001" summary="2. DI, IoC, Beans, BeanFactory, ApplicationContext">
       <created>1707254137896</created>
@@ -154,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707331718013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4. Конфигурация контейнера [#505072]">
+      <created>1707426152602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707426152602</updated>
+    </task>
+    <task id="LOCAL-00005" summary="4. Конфигурация контейнера [#505072]">
+      <created>1707426268368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707426268368</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +200,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
