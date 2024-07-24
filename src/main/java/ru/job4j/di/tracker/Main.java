@@ -13,7 +13,6 @@ public class Main {
         StartUI ui = context.get(StartUI.class);
         for (int i = 0; i < 3; i++) {
             ui.add("Enter your name: ");
-
         }
         ui.print();
     }
