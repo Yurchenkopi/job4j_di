@@ -23,7 +23,7 @@ public class Man {
     private List<Pet<Dog>> dogs;
 
     @Autowired
-    private Map<String, Pet<Dog>> mapDogs;
+    private Map<String, Pet> mapDogs;
 
     @Resource(name = "someDog")
     private Dog dog1;
@@ -38,25 +38,6 @@ public class Man {
         this.bird = bird;
     }
 
-    public void setDog(Dog dog) {
-        this.dog = dog;
-    }
-
-    public void setDog1(Dog dog1) {
-        this.dog1 = dog1;
-    }
-
-    public void setDogs(List<Pet<Dog>> dogs) {
-        this.dogs = dogs;
-    }
-
-    public void setPets(Set<Pet> pets) {
-        this.pets = pets;
-    }
-
-    public void setMapDogs(Map<String, Pet<Dog>> mapDogs) {
-        this.mapDogs = mapDogs;
-    }
     public void print() {
         System.out.printf("My Dog: %s%n", dog.print());
         System.out.printf("My SecondDog: %s%n", dog1.print());
@@ -70,5 +51,4 @@ public class Man {
         System.out.println("mapDogs:");
         mapDogs.forEach((key, value) -> System.out.printf("%s - %s%n", key, value.print()));
     }
-
 }
