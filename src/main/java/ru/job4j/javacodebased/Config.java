@@ -28,12 +28,12 @@ public class Config {
 
     @Bean
     public Parrot parrot() {
-        return birdFactory().getParrot(parrotName) ;
+        return birdFactory().getParrot(parrotName);
     }
 
     @Bean
     public Canary canary() {
-        return birdFactory().getCanary(canaryName) ;
+        return birdFactory().getCanary(canaryName);
     }
 
     @Bean (
@@ -45,7 +45,7 @@ public class Config {
     }
 
     @Bean
-    public Cat cat(){
+    public Cat cat() {
         return Cat.createCat(catName);
     }
 }
