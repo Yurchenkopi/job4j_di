@@ -11,6 +11,10 @@ public class SpringDI {
         for (int i = 0; i < 3; i++) {
             ui.add("Enter your name: ");
         }
+        System.out.println("UI bean print info:");
         ui.print();
+        StartUI anotherUI = context.getBean(StartUI.class);
+        System.out.println("Another UI bean print info:");
+        anotherUI.print();
     }
 }
