@@ -1,17 +1,16 @@
 package ru.job4j.di.tracker;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Scope("prototype")
+@AllArgsConstructor
 public class StartUI {
 
-    @Autowired
     private Store store;
-
-    @Autowired
     private ConsoleInput consoleInput;
 
     public void add(String value) {
